@@ -1,0 +1,60 @@
+.side-menu-container {
+    min-width: 296px;
+    min-height: 100vh;
+    position: fixed;
+}
+
+.side-menu-list {
+    .tab {
+        position: relative;
+
+        &::after {
+            content: '';
+            display: none;
+            width: 4px;
+            height: 24px;
+            background-color: var(--bs-green);
+            position: absolute;
+            left: -32px;
+        }
+
+        &:focus::after {
+            display: block;
+        }
+
+    }
+
+}
+
+.login img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 24px;
+}
+
+header,
+main {
+    margin-left: 296px;
+}
+
+.table {
+    width: 100%;
+}
+
+.arrow-downward {
+    font-size: 18px;
+}
+
+tbody {
+    tr {
+        border-bottom: 3px solid var(--bs-light);
+        &>* {
+            padding-top: 19px;
+            padding-bottom: 17px;
+        }
+    }
+
+
+}
