@@ -41,20 +41,36 @@ main {
 
 .table {
     width: 100%;
-}
-
-.arrow-downward {
-    font-size: 18px;
-}
-
-tbody {
-    tr {
-        border-bottom: 3px solid var(--bs-light);
-        &>* {
-            padding-top: 19px;
-            padding-bottom: 17px;
-        }
+    margin-bottom: 63px;
+    .arrow-downward {
+        font-size: 18px;
     }
-
-
+    tbody {
+        tr {
+            border-bottom: 3px solid var(--bs-light);
+            &>* {
+                padding-top: 19px;
+                padding-bottom: 17px;
+            }
+        }        
+    }
 }
+
+.number a {
+    padding: 5px 12px;
+    color: $dark;
+    &:hover,
+    &:focus {
+        background: $success;
+        color: $white;
+    }
+}
+
+
+
+
+
+
+
+
+
